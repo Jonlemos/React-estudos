@@ -9,12 +9,16 @@ import Member from './components/Member'
 import ComponentFunctions from './components/ComponentFunctions'
 import Father from './components/Father'
 import ComponentClass from './components/ComponentClass'
+import Counter from './components/Counter'
+import Hooks from './components/Hooks'
 
 
 const element = document.getElementById('root')
 
 ReactDom.render(
     <div>
+        <Hooks/>
+        <Counter numeroInicial ={50}/>
         <ComponentClass value="Im a component Class"/>
         <Father/>
         <ComponentFunctions></ComponentFunctions>
